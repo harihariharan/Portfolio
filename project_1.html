@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Project 1</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <main id="main">
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8 fixed-top one">
+            <div class="portfolio-details-slider swiper" style="background-color: white;">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <video id="myVideo" width="100%" autoplay muted controls>
+                    <source src="assets\img\portfolio\Project-1\ABU Robocon 2023 video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <div>
+                    <h6 style="text-align: center; font-family:sans-serif;margin-top: 8px;"><strong>ABU Robocon 2023</strong></h6>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                 <!-- <img src="assets\img\portfolio\Project-1\Robocon banner.png" alt="" max-width="100%" height="80%"> -->
+                  <div>
+                    <h6 style="text-align: center; font-family:sans-serif;margin-top: 8px;">ABU Robocon 2023 held on 15th - 18th july 2023, Thiyagarajar Indoor stadium, New Delhi.</h6>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <!-- <img src="assets\img\portfolio\Project-1\Team iKon.jpg" alt=""> -->
+                  <div>
+                    <h6 style="text-align: center; font-family:sans-serif;margin-top: 8px;">Team iKon - Kumaraguru College Technology</h6>
+                  </div>
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+          <script>
+            document.addEventListener('DOMContentLoaded', function () {
+              var swiper = new Swiper('.portfolio-details-slider', {
+                speed: 400,
+                loop: true,
+                autoplay: {
+                  delay: 3000,
+                  disableOnInteraction: false
+                },
+                pagination: {
+                  el: '.swiper-pagination',
+                  type: 'bullets',
+                  clickable: true
+                },
+                on: {
+                  init: function () {
+                    var video = document.getElementById('myVideo');
+                    var firstSlide = this.slides[0];
+
+                    video.addEventListener('ended', function () {
+                      swiper.autoplay.start();
+                    });
+
+                    this.on('slideChange', function () {
+                      if (this.realIndex === 0) {
+                        swiper.autoplay.stop();
+                        if (video.paused) {
+                          video.play();
+                        }
+                      } else {
+                        swiper.autoplay.start();
+                      }
+                    });
+                  },
+                }
+              });
+            });
+          </script>
+
+          <div class="col-lg-4 offset-lg-8 offset-sm-8 offset-md-0 two">
+            <div class="portfolio-info">
+              <div class="col-lg-12 fixed-top" style="height: 25px; background-color: white;"></div>
+              <h1 class="col-lg-4 offset-lg-8 offset-sm-8 offset-md-0 fixed-top two"
+                style="padding-top: 20px; padding-left: 20px;padding-bottom: 5px; background-color: white;font-family:sans-serif;"><strong>ABU
+                  Robocon 2023</strong></h1>
+              <ul>
+                <li><strong>Project Abstract</strong>: An International Robotics Competition</li>
+                <li><strong>Project date</strong>: October 2022 - July 2023</li>
+                <li><strong>Role</strong>: Team iKon - Electrical Team Lead</li>
+                <li><strong>Project Application</strong>: <a href="https://github.com/harihariharan/Equinox"
+                    target="_blank">Equinox</a></li>
+                <li><strong>Technologies Learned</strong>:</li>
+                <li>
+                  <ol>
+                    <li>Electrical Circuits Designing and Wiring</li>
+                    <li>Microcontroller programming Embedded C</li>
+                    <li>Power distribution system designing</li>
+                    <li>Battery Management and Analysis</li>
+                    <li>Motors and Actuators Selection and Control systems Designing</li>
+                  </ol>
+                </li>
+              </ul>
+            </div>
+            <div class="portfolio-description" style="text-align: justify;">
+              <h4><strong>Project Overview</strong></h4>
+              <ul>
+                <li><strong>Significance:</strong></li>
+                <ul>
+                  <li><strong>Event:</strong> ABU Robocon 2023 organized by the Asia-Pacific Broadcasting Union.</li>
+                  <li><strong>Team:</strong> Represented Kumaraguru College of Technology as part of <b>Team iKon</b>
+                    from iQube.</li>
+                  <!-- <li><strong>Journey:</strong> A ten-month project with eight diverse team members.</li> -->
+                </ul>
+              </ul>
+              <ul>
+                <li><strong>Project Theme:</strong></li>
+                <ul>
+                  <li><strong>Objective:</strong> <b>Casting Flowers Over Angkor Wat</b> - Build robots to replicate the
+                    act of offering flowers (rings) at the iconic Angkor Wat temple complex.</li>
+                  <li><strong>Robots:</strong> Designed and constructed two robots - a "rabbit" robot and an "elephant"
+                    robot.</li>
+                  <li><strong>Task:</strong> Throw rings onto designated poles within the game field.</li>
+                </ul>
+              </ul>
+              <ul>
+                <li><strong>My Contributions:</strong></li>
+                <ul>
+                  <li><strong>Coding:</strong> Developed coding logic to control robots' movements and actions.</li>
+                  <li><strong>Control Systems:</strong> Designed closed-loop control systems using motor encoders for
+                    accurate movement.</li>
+                  <li><strong>Hardware Selection:</strong> Assisted in selecting various motors and actuators:
+                    <ul>
+                      <li>Planetary geared DC motors for locomotion.</li>
+                      <li>Stepper motors for ring lifting.</li>
+                      <li>Servo motors for holding rings.</li>
+                      <li>Linear actuators for adjusting the shooting mechanism angles.</li>
+                    </ul>
+                  </li>
+                  <li><strong>Power Distribution:</strong> Designed and implemented the power distribution system for
+                    efficient power supply to various components of the robots.</li>
+                </ul>
+              </ul>
+              <ul>
+                <li><strong>Achievements:</strong></li>
+                <ul>
+                  <li><strong>Stages:</strong> Successfully completed Stage 1 and Stage 2, and participated in Stage 3
+                    of national level DD Robocon 2023 at the Thyagaraja Sports Complex, New Delhi.</li>
+                  <li><strong>Outcome:</strong> Demonstrated dedication, collaborative spirit, and honed invaluable
+                    skills throughout the project.</li>
+                </ul>
+              </ul>
+              <ul>
+                <li><strong>Personal Growth:</strong></li>
+                <ul>
+                  <li><strong>Experience:</strong> Enriched and transformed my knowledge and deepened the understanding
+                    of robotics.</li>
+                  <li><strong>Skills:</strong> Enhanced teamwork, problem-solving, and critical thinking abilities.</li>
+                  <li><strong>Technical Expertise:</strong> Developed skills in embedded systems and electrical
+                    engineering.</li>
+                  <li><strong>Satisfaction:</strong> Witnessing our robots' performance and contributing to a shared
+                    goal was truly rewarding.</li>
+                </ul>
+              </ul>
+
+              <div class="col-lg-12 fixed-bottom" style="height: 15px; background-color: white;"></div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
